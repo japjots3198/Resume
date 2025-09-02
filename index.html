@@ -6,171 +6,221 @@
   <title>Japjot Singh | Senior Data Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- Mermaid.js for pipeline diagrams -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true, theme: "forest" });
+    mermaid.initialize({ startOnLoad: true, theme: "neutral" });
   </script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
-  <!-- Hero -->
-  <section class="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 text-white text-center py-24 shadow-lg">
-    <h1 class="text-6xl font-extrabold mb-4">Japjot Singh</h1>
-    <p class="text-xl mb-6">Senior Data Engineer | Cloud • Streaming • AI/LLMs • System Design</p>
+  <!-- HERO -->
+  <section class="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 text-white text-center py-32 shadow-lg">
+    <h1 class="text-6xl font-extrabold mb-6" data-aos="fade-down">Japjot Singh</h1>
+    <p class="text-2xl mb-6" data-aos="fade-up">Senior Data Engineer | Cloud • Streaming • AI/LLMs • System Design</p>
     <div class="space-x-4">
-      <a href="#pipeline" class="px-6 py-3 bg-yellow-400 text-black rounded-full font-bold hover:bg-yellow-500">See Pipeline</a>
+      <a href="#projects" class="px-6 py-3 bg-yellow-400 text-black rounded-full font-bold hover:bg-yellow-500 shadow-lg">View Projects</a>
       <a href="Japjot_Singh_Resume.pdf" class="px-6 py-3 border-2 border-white rounded-full font-bold hover:bg-white hover:text-indigo-700">Download Resume</a>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="max-w-5xl mx-auto text-center py-16">
-    <h2 class="text-4xl font-bold text-indigo-700 mb-6">About Me</h2>
-    <p class="text-lg leading-relaxed">
-      Senior Data Engineer with <b class="text-blue-600">6+ years</b> of experience building 
-      <b class="text-purple-600">ETL/ELT pipelines</b>, <b class="text-indigo-600">real-time streaming systems</b>, 
-      and <b class="text-blue-600">cloud-native platforms</b>.  
-      Delivered <b>40% fewer pipeline failures</b>, <b>80% faster infra setup</b>, and <b>25% cloud cost savings</b>.  
-      Skilled in Python, SQL, Spark, Kafka, Airflow, dbt, Terraform, and Snowflake, across AWS, Azure, and GCP.  
-      Experienced in <b>AI/LLM pipelines</b> and <b>RAG workflows</b> for next-gen analytics.
+  <!-- ABOUT -->
+  <section class="max-w-5xl mx-auto text-center py-20">
+    <h2 class="text-4xl font-bold text-indigo-700 mb-6" data-aos="zoom-in">About Me</h2>
+    <p class="text-lg leading-relaxed" data-aos="fade-up">
+      Senior Data Engineer with <b class="text-blue-600">6+ years</b> designing and scaling <b>ETL/ELT pipelines</b>,
+      <b>real-time streaming systems</b>, and <b>cloud-native platforms</b>. 
+      Proven results: <b>40% fewer failures</b>, <b>80% faster infra setup</b>, and <b>25% lower costs</b>.
+      Skilled in <b>Python, Spark, Snowflake, Kafka, Airflow, dbt, Terraform</b>, and cloud platforms (AWS, Azure, GCP).
+      Experienced in <b>AI/LLM pipelines</b> and <b>RAG workflows</b> delivering measurable business outcomes.
     </p>
   </section>
 
-  <!-- Impact Metrics -->
-  <section class="max-w-5xl mx-auto py-16">
-    <h2 class="text-3xl font-bold text-center mb-10 text-blue-700">Business Impact</h2>
-    <canvas id="impactChart"></canvas>
+  <!-- SKILLS -->
+  <section class="bg-gray-100 py-20">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-indigo-700 mb-10">Core Tech Stack</h2>
+      <div class="grid md:grid-cols-5 gap-8" data-aos="fade-up">
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-12 mx-auto mb-3"><p><b>Python</b></p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" class="h-12 mx-auto mb-3"><p><b>Spark</b></p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg" class="h-12 mx-auto mb-3"><p><b>Snowflake</b></p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" class="h-12 mx-auto mb-3"><p><b>AWS</b></p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Apache_kafka.svg" class="h-12 mx-auto mb-3"><p><b>Kafka</b></p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png" class="h-12 mx-auto mb-3"><p><b>Airflow</b></p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
+          <img src="https://raw.githubusercontent.com/dbt-labs/dbt-logo/main/dbt-logo-full.png" class="h-12 mx-auto mb-3"><p><b>dbt</b></p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" class="h-12 mx-auto mb-3"><p><b>Terraform</b></p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" class="h-12 mx-auto mb-3"><p><b>Tableau</b></p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Microsoft_Power_BI_Logo.svg" class="h-12 mx-auto mb-3"><p><b>Power BI</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIPELINE -->
+  <section id="pipeline" class="max-w-6xl mx-auto py-20">
+    <h2 class="text-4xl font-bold text-blue-700 text-center mb-10">End-to-End Pipeline Architecture</h2>
+    <div class="bg-white p-6 rounded-lg shadow" data-aos="zoom-in">
+      <div class="mermaid">
+        flowchart LR
+          A[Sources: APIs, DBs, Logs] --> B[Ingestion: Kafka, Kinesis, S3]
+          B --> C[Processing: Spark, Glue, Databricks]
+          C --> D[Storage: Snowflake, Redshift, Delta Lake]
+          D --> E[Orchestration: Airflow, dbt, Step Functions]
+          E --> F[Analytics: Tableau, Power BI, LLMs]
+      </div>
+    </div>
+    <p class="text-center mt-6 text-gray-600">Supports both <b>batch</b> and <b>real-time streaming</b> data flows, enabling analytics, ML, and GenAI workloads.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="bg-gray-100 py-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-indigo-700 text-center mb-10">Highlighted Projects</h2>
+
+      <!-- Project 1 -->
+      <div class="bg-white p-8 rounded-lg shadow mb-12" data-aos="fade-right">
+        <h3 class="text-2xl font-bold mb-4">🏥 Healthcare Analytics Pipeline</h3>
+        <p>Built an end-to-end pipeline integrating EHR, claims, and provider data to drive KPIs like readmission rates, LOS, and denial rates.</p>
+        <ul class="list-disc ml-6 mt-3">
+          <li>Stack: <b>AWS Glue, Snowflake, Airflow, Power BI</b></li>
+          <li>Latency ↓ <b>30%</b>, SLA compliance ↑ <b>98%</b>, STAR ratings ↑ <b>1.5x</b>.</li>
+        </ul>
+        <div class="mermaid mt-6">
+          flowchart LR
+            A[EHR/Claims Data] --> B[AWS Glue ETL]
+            B --> C[Snowflake Star Schema]
+            C --> D[Airflow dbt Models]
+            D --> E[Power BI Dashboards]
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white p-8 rounded-lg shadow mb-12" data-aos="fade-left">
+        <h3 class="text-2xl font-bold mb-4">💳 Fraud Detection Pipeline</h3>
+        <p>Implemented a real-time anomaly detection system for financial transactions.</p>
+        <ul class="list-disc ml-6 mt-3">
+          <li>Stack: <b>Kafka, Spark Streaming, Databricks, Snowflake</b></li>
+          <li>Fraud detection accuracy ↑ <b>35%</b>, reporting lag ↓ <b>70%</b>.</li>
+        </ul>
+        <div class="mermaid mt-6">
+          flowchart LR
+            A[Kafka Streams] --> B[Spark Streaming ETL]
+            B --> C[Databricks ML Models]
+            C --> D[Snowflake Storage]
+            D --> E[BI Tools + Alerts]
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white p-8 rounded-lg shadow" data-aos="fade-right">
+        <h3 class="text-2xl font-bold mb-4">🤖 GenAI / RAG Pipeline</h3>
+        <p>Developed a retrieval-augmented generation (RAG) pipeline for unstructured text analytics.</p>
+        <ul class="list-disc ml-6 mt-3">
+          <li>Stack: <b>LangChain, Vector DB, Snowflake, AWS Lambda</b></li>
+          <li>Reduced retrieval latency by <b>45%</b>, boosted knowledge extraction speed.</li>
+        </ul>
+        <div class="mermaid mt-6">
+          flowchart LR
+            A[Unstructured Docs] --> B[Embedding Model]
+            B --> C[Vector DB]
+            C --> D[Snowflake Integration]
+            D --> E[LLM Query Response]
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BUSINESS IMPACT -->
+  <section class="max-w-5xl mx-auto py-20">
+    <h2 class="text-3xl font-bold text-center mb-10 text-blue-700">Business Impact Metrics</h2>
+    <canvas id="metricsChart"></canvas>
   </section>
   <script>
-    const ctx = document.getElementById('impactChart').getContext('2d');
-    new Chart(ctx, {
-      type: 'bar',
+    const metricsCtx = document.getElementById('metricsChart').getContext('2d');
+    new Chart(metricsCtx, {
+      type: 'radar',
       data: {
-        labels: ['Infra Setup Saved', 'Failures Reduced', 'Cloud Savings'],
+        labels: ['Pipeline Reliability', 'Setup Speed', 'Cost Savings', 'Latency Reduction', 'Fraud Detection Accuracy'],
         datasets: [{
           label: 'Impact %',
-          data: [80, 40, 25],
-          backgroundColor: ['#3b82f6', '#8b5cf6', '#6366f1']
+          data: [40, 80, 25, 30, 35],
+          backgroundColor: 'rgba(99, 102, 241, 0.2)',
+          borderColor: '#6366f1',
+          borderWidth: 2
         }]
       },
-      options: { scales: { y: { beginAtZero: true, max: 100 } } }
+      options: { scales: { r: { beginAtZero: true, max: 100 } } }
     });
   </script>
 
-  <!-- Skills -->
-  <section class="bg-gradient-to-r from-indigo-50 to-blue-50 py-16">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-4xl font-bold text-indigo-700 mb-10">Tech Stack</h2>
-      <div class="grid md:grid-cols-4 gap-8">
-        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="h-12 mx-auto mb-3" alt="Python"><p><b>Python</b></p>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="bg-gray-100 py-20">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold text-indigo-700 mb-10 text-center">Experience</h2>
+      <div class="space-y-10" data-aos="fade-up">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-bold text-xl">Senior Data Engineer – Computational Group</h3>
+          <p class="italic text-gray-500">Sept 2023 – Present • New York</p>
+          <ul class="list-disc ml-6 mt-2">
+            <li>Built Kafka + Spark ingestion pipelines (sub-minute SLAs).</li>
+            <li>Developed LLM/RAG pipelines with Snowflake (retrieval latency ↓ 45%).</li>
+            <li>Automated infra with Terraform + Boto3 (setup ↓ 80%).</li>
+          </ul>
         </div>
-        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" class="h-12 mx-auto mb-3" alt="Spark"><p><b>Spark</b></p>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-bold text-xl">Data Engineer – ZS Associates</h3>
+          <p class="italic text-gray-500">Jan 2022 – Aug 2023 • New Jersey</p>
+          <ul class="list-disc ml-6 mt-2">
+            <li>Built ADF + Synapse pipelines for TB-scale data (latency ↓ 30%).</li>
+            <li>Implemented dbt testing + Purview lineage for governance.</li>
+          </ul>
         </div>
-        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg" class="h-12 mx-auto mb-3" alt="Snowflake"><p><b>Snowflake</b></p>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" class="h-12 mx-auto mb-3" alt="AWS"><p><b>AWS</b></p>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Apache_kafka.svg" class="h-12 mx-auto mb-3" alt="Kafka"><p><b>Kafka</b></p>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png" class="h-12 mx-auto mb-3" alt="Airflow"><p><b>Airflow</b></p>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
-          <img src="https://raw.githubusercontent.com/dbt-labs/dbt-logo/main/dbt-logo-full.png" class="h-12 mx-auto mb-3" alt="dbt"><p><b>dbt</b></p>
-        </div>
-        <div class="p-6 bg-white rounded-lg shadow hover:shadow-xl">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Terraform_Logo.svg" class="h-12 mx-auto mb-3" alt="Terraform"><p><b>Terraform</b></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Interactive Pipeline -->
-  <section id="pipeline" class="max-w-5xl mx-auto py-16">
-    <h2 class="text-3xl font-bold text-blue-700 text-center mb-10">Interactive Data Pipeline</h2>
-    <div class="bg-white shadow-md rounded-lg p-6">
-      <div class="mermaid">
-        flowchart LR
-          A[📥 Sources<br/>APIs, DBs, Logs] --> B[🚀 Ingestion<br/>Kafka, Kinesis, S3]
-          B --> C[⚙️ Processing<br/>Spark, Glue, Databricks]
-          C --> D[🗄 Storage<br/>Snowflake, Redshift, Delta Lake]
-          D --> E[🧩 Orchestration<br/>Airflow, dbt, Step Functions]
-          E --> F[📊 Analytics & ML<br/>Tableau, Power BI, LLMs]
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="bg-gradient-to-r from-purple-50 to-blue-50 py-16">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-4xl font-bold text-indigo-700 mb-10">Highlighted Projects</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-2xl transition">
-          <img src="https://cdn.worldvectorlogo.com/logos/chatgpt.svg" class="h-12 mx-auto mb-3" alt="LLM">
-          <h4 class="font-bold mb-2">GenAI RAG Pipeline</h4>
-          <p>Unstructured text → embeddings → Snowflake → LLM ingestion using LangChain. Optimized retrieval latency by 45%.</p>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Graph_Diagram.svg/640px-Graph_Diagram.svg.png" alt="dbt Lineage Graph" class="mt-4 rounded shadow">
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-2xl transition">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" class="h-12 mx-auto mb-3" alt="Tableau">
-          <h4 class="font-bold mb-2">Real-Time BI Dashboards</h4>
-          <p>Kafka + Spark Streaming powering Tableau dashboards with sub-minute latency for 50+ leaders.</p>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Directed_acyclic_graph.png/640px-Directed_acyclic_graph.png" alt="Airflow DAG" class="mt-4 rounded shadow">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-bold text-xl">Data Engineer – Bain & Company</h3>
+          <p class="italic text-gray-500">Mar 2020 – Dec 2021 • New York</p>
+          <ul class="list-disc ml-6 mt-2">
+            <li>Developed Spark anomaly detection pipelines (accuracy ↑ 35%).</li>
+            <li>Built Databricks CDC workflows syncing SQL Server → Snowflake (lag ↓ 70%).</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Experience -->
-  <section id="experience" class="max-w-5xl mx-auto py-16">
-    <h2 class="text-4xl font-bold text-blue-700 mb-10">Experience</h2>
-    <div class="space-y-10">
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
-        <h3 class="font-bold text-xl">Senior Data Engineer – Computational Group</h3>
-        <p class="italic text-gray-500">Sept 2023 – Present • New York</p>
-        <ul class="list-disc ml-6 mt-2 space-y-1">
-          <li>Built Kafka + Spark ingestion pipelines (sub-minute SLAs).</li>
-          <li>Developed LLM/RAG pipelines with Snowflake (improved retrieval efficiency).</li>
-          <li>Automated infra with Terraform + Boto3 (↓ setup 80%).</li>
-          <li>Optimized Snowflake queries (↓ dashboard latency 35%).</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
-        <h3 class="font-bold text-xl">Data Engineer – ZS Associates</h3>
-        <p class="italic text-gray-500">Jan 2022 – Aug 2023 • New Jersey</p>
-        <ul class="list-disc ml-6 mt-2 space-y-1">
-          <li>Built Azure ADF + Synapse pipelines for TB-scale data (↓ latency 30%).</li>
-          <li>Implemented dbt testing + Purview lineage for governed data pipelines.</li>
-          <li>Developed CI/CD pipelines with Terraform + GitHub Actions (↓ setup 80%).</li>
-        </ul>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
-        <h3 class="font-bold text-xl">Data Engineer – Bain & Company</h3>
-        <p class="italic text-gray-500">Mar 2020 – Dec 2021 • New York</p>
-        <ul class="list-disc ml-6 mt-2 space-y-1">
-          <li>Developed Spark anomaly detection pipelines integrated with Glue + Snowflake (↑ accuracy 35%).</li>
-          <li>Built Databricks CDC workflows syncing SQL Server → Snowflake (↓ reporting lag 70%).</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section class="max-w-5xl mx-auto py-16 text-center">
+  <!-- EDUCATION -->
+  <section class="max-w-5xl mx-auto py-20 text-center">
     <h2 class="text-3xl font-bold text-blue-700 mb-6">Education</h2>
     <p><b>New York University</b> — Master of Science, Computer Science (Dec 2024)</p>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="bg-gradient-to-r from-blue-700 to-purple-700 text-white text-center py-6">
     <p>© 2025 Japjot Singh | Senior Data Engineer</p>
   </footer>
 
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
