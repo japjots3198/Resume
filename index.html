@@ -1,137 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Japjot Singh | Senior Data Engineer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-indigo-700 to-purple-700 text-white text-center py-24 relative">
+  <h1 class="text-5xl font-extrabold">Japjot Singh</h1>
+  <p class="mt-4 text-xl">Senior Data Engineer • Cloud & AI/LLMs • ETL & Streaming</p>
+  <div class="mt-6 space-x-4">
+    <a href="#experience" class="px-6 py-3 bg-yellow-400 rounded-full hover:bg-yellow-500">Explore Experience</a>
+    <a href="Japjot_Singh_Resume.pdf" class="px-6 py-3 border border-white rounded-full hover:bg-white hover:text-indigo-700">Download Resume</a>
+  </div>
+  <svg class="absolute bottom-0 w-full animate-bounce" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="..."></path></svg>
+</section>
 
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center py-20">
-    <h1 class="text-5xl font-bold mb-4">Japjot Singh</h1>
-    <p class="text-xl mb-6">Senior Data Engineer | Cloud | AI/LLMs | Data Analytics</p>
-    <div class="flex justify-center space-x-6">
-      <a href="mailto:jaysingh2883@gmail.com" class="hover:text-yellow-300"><i data-feather="mail"></i></a>
-      <a href="https://linkedin.com/in/your-link" target="_blank" class="hover:text-yellow-300"><i data-feather="linkedin"></i></a>
-      <a href="https://github.com/your-link" target="_blank" class="hover:text-yellow-300"><i data-feather="github"></i></a>
+<!-- Summary + Metrics -->
+<section class="max-w-4xl mx-auto py-16 text-center">
+  <h2 class="text-3xl font-bold mb-6">Transforming Data into Insight</h2>
+  <p class="mb-8">Senior Data Engineer with 6+ years of engineering resilient, scalable data infrastructure. Delivered 80% faster infra provisioning, 40% fewer failures, and 25% cloud cost reduction. Expert in Python, Spark, Snowflake, Terraform, and AI/LLM data pipelines.</p>
+  <div class="grid grid-cols-3 gap-6">
+    <div class="shadow-lg p-6 rounded-lg">
+      <h3 class="text-4xl font-bold text-indigo-600">80%</h3><p>Infra Setup Time Saved</p>
     </div>
-  </section>
-
-  <!-- Summary -->
-  <section class="max-w-5xl mx-auto p-10">
-    <h2 class="text-3xl font-bold text-blue-700 mb-4">Summary</h2>
-    <p class="text-lg leading-relaxed">
-      Senior Data Engineer with 6+ years of experience designing and scaling ETL/ELT pipelines, 
-      real-time streaming systems, and cloud-native architectures. Proven record of reducing 
-      pipeline failures by <b class="text-blue-600">40%</b>, cutting infra setup time by <b class="text-blue-600">80%</b>, 
-      and delivering <b class="text-blue-600">25%</b> cloud cost savings. Skilled in 
-      Python, SQL, Spark, Kafka, Airflow, DBT, Terraform, and Snowflake. 
-      Experienced in supporting AI/ML workloads including <b class="text-blue-600">LLMs</b> and 
-      <b class="text-blue-600">RAG pipelines</b>.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section class="bg-white shadow-md py-10">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold text-indigo-700 mb-6">Core Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="p-4 bg-indigo-50 rounded-lg shadow hover:shadow-lg transition">
-          <i data-feather="code" class="mb-2"></i>
-          <p><b>Programming:</b> Python, SQL, Scala, Java, R, Bash</p>
-        </div>
-        <div class="p-4 bg-indigo-50 rounded-lg shadow hover:shadow-lg transition">
-          <i data-feather="database" class="mb-2"></i>
-          <p><b>Data Platforms:</b> Snowflake, Redshift, BigQuery, Synapse</p>
-        </div>
-        <div class="p-4 bg-indigo-50 rounded-lg shadow hover:shadow-lg transition">
-          <i data-feather="cloud" class="mb-2"></i>
-          <p><b>Cloud:</b> AWS, Azure, GCP</p>
-        </div>
-        <div class="p-4 bg-indigo-50 rounded-lg shadow hover:shadow-lg transition">
-          <i data-feather="server" class="mb-2"></i>
-          <p><b>Big Data:</b> Spark, Kafka, Hadoop, Flink, Databricks</p>
-        </div>
-        <div class="p-4 bg-indigo-50 rounded-lg shadow hover:shadow-lg transition">
-          <i data-feather="settings" class="mb-2"></i>
-          <p><b>Infrastructure:</b> Airflow, DBT, Terraform, Docker</p>
-        </div>
-        <div class="p-4 bg-indigo-50 rounded-lg shadow hover:shadow-lg transition">
-          <i data-feather="activity" class="mb-2"></i>
-          <p><b>AI/ML:</b> LLM Data Pipelines, RAG Workflows</p>
-        </div>
-      </div>
+    <div class="shadow-lg p-6 rounded-lg">
+      <h3 class="text-4xl font-bold text-indigo-600">40%</h3><p>Pipeline Failures Reduced</p>
     </div>
-  </section>
-
-  <!-- Experience -->
-  <section class="max-w-5xl mx-auto py-12">
-    <h2 class="text-3xl font-bold text-blue-700 mb-6">Experience</h2>
-    <div class="space-y-8">
-
-      <div class="border-l-4 border-blue-600 pl-6">
-        <h3 class="text-xl font-bold">Senior Data Engineer – Computational Group</h3>
-        <p class="text-gray-500 italic">New York | Sept 2023 – Present</p>
-        <ul class="list-disc ml-6 mt-2 space-y-1">
-          <li>Built scalable ETL pipelines using Python, SQL, Spark (↓ pipeline failures by 40%).</li>
-          <li>Optimized Snowflake queries, reducing dashboard latency by 35%.</li>
-          <li>Integrated pipelines for AI/LLM workloads & RAG-based retrieval.</li>
-          <li>Automated infra with Terraform & Boto3 (↓ setup by 80%).</li>
-        </ul>
-      </div>
-
-      <div class="border-l-4 border-indigo-600 pl-6">
-        <h3 class="text-xl font-bold">Data Engineer – ZS Associates</h3>
-        <p class="text-gray-500 italic">New Jersey | Jan 2022 – Aug 2023</p>
-        <ul class="list-disc ml-6 mt-2 space-y-1">
-          <li>Built ADF + Synapse pipelines for terabyte-scale data (↓ latency by 30%).</li>
-          <li>Created CI/CD workflows in GitHub Actions & Terraform (↓ setup by 80%).</li>
-          <li>Implemented DBT testing & anomaly detection, ensuring data trust.</li>
-        </ul>
-      </div>
-
-      <div class="border-l-4 border-gray-600 pl-6">
-        <h3 class="text-xl font-bold">Data Engineer – Bain & Company</h3>
-        <p class="text-gray-500 italic">New York | Mar 2020 – Dec 2021</p>
-        <ul class="list-disc ml-6 mt-2 space-y-1">
-          <li>Developed Spark anomaly detection pipelines (↑ accuracy by 35%).</li>
-          <li>Built Databricks CDC workflows syncing to Snowflake for analytics.</li>
-        </ul>
-      </div>
+    <div class="shadow-lg p-6 rounded-lg">
+      <h3 class="text-4xl font-bold text-indigo-600">25%</h3><p>Cloud Cost Savings</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Projects -->
-  <section class="bg-white shadow-md py-10">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold text-indigo-700 mb-6">Highlighted Projects</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-6 bg-indigo-50 rounded-lg hover:shadow-lg transition">
-          <h4 class="font-bold mb-2">GenAI Data Pipeline</h4>
-          <p>Designed unstructured data ingestion pipeline enabling LLM fine-tuning & RAG retrieval using Snowflake + AWS.</p>
-        </div>
-        <div class="p-6 bg-indigo-50 rounded-lg hover:shadow-lg transition">
-          <h4 class="font-bold mb-2">Real-Time Analytics</h4>
-          <p>Built Kafka + Spark Streaming workflow powering Tableau dashboards with sub-minute latency for executives.</p>
-        </div>
-      </div>
+<!-- Experience Timeline -->
+<section class="relative max-w-5xl mx-auto py-16">
+  <h2 class="text-3xl font-bold text-left mb-10">Experience Timeline</h2>
+  <div class="border-l-2 border-gray-300 pl-8 space-y-12">
+    <div class="relative mb-8">
+      <div class="absolute -left-6 top-2 bg-indigo-600 rounded-full w-4 h-4"></div>
+      <h3 class="font-bold text-xl">Computational Group — Senior Data Engineer</h3>
+      <p class="italic text-gray-500">Sept 2023–Present • New York</p>
+      <ul class="list-disc ml-6 mt-3 space-y-1">
+        <li>Built real-time Kafka + Spark ingestion pipeline (sub-minute SLAs).</li>
+        <li>Engineered LLM/RAG pipelines for unstructured data on Snowflake.</li>
+        <li>Automated infra with Terraform & Boto3 (80% setup time reduction).</li>
+      </ul>
     </div>
-  </section>
+    <!-- Additional roles follow similar pattern -->
+  </div>
+</section>
 
-  <!-- Education -->
-  <section class="max-w-5xl mx-auto py-12">
-    <h2 class="text-3xl font-bold text-blue-700 mb-4">Education</h2>
-    <p><b>New York University</b> — Master of Science, Computer Science (Dec 2024)</p>
-  </section>
+<!-- Projects with Hover Cards -->
+<section class="bg-gray-100 py-16">
+  <h2 class="text-3xl font-bold text-center mb-8">Select Projects</h2>
+  <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="group bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transition">
+      <h4 class="font-semibold text-lg mb-2 group-hover:text-indigo-600">GenAI Pipeline for RAG</h4>
+      <p>Unstructured text → embeddings → Snowflake → AI model ingestion.</p>
+    </div>
+    <div class="group bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transition">
+      <h4 class="font-semibold text-lg mb-2 group-hover:text-indigo-600">Real-Time Analytics</h4>
+      <p>Kafka + Spark streaming powering executive dashboards in Tableau.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center p-6">
-    <p>© 2025 Japjot Singh | Senior Data Engineer</p>
-  </footer>
-
-  <script>feather.replace()</script>
-</body>
-</html>
+<!-- Footer with Contact + Links -->
+<footer class="bg-indigo-700 text-white text-center py-8 mt-16">
+  <p>Looking to build data pipelines that scale.</p>
+  <div class="mt-4 space-x-4">
+    <a href="mailto:jaysingh2883@gmail.com" class="hover:underline">Email Me</a>
+    <a href="https://linkedin.com" target="_blank" class="hover:underline">LinkedIn</a>
+    <a href="https://github.com" target="_blank" class="hover:underline">GitHub</a>
+  </div>
+</footer>
