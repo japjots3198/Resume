@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japjot Singh - Data Engineer Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto p-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Japjot Singh</h1>
+      <nav class="space-x-6">
+        <a href="#summary" class="hover:text-blue-600">Summary</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#experience" class="hover:text-blue-600">Experience</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#education" class="hover:text-blue-600">Education</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-5xl mx-auto p-10 text-center">
+    <h2 class="text-4xl font-bold mb-4">Senior Data Engineer</h2>
+    <p class="text-lg text-gray-600">New York, NY | 929-306-8886 | 
+      <a href="mailto:jaysingh2883@gmail.com" class="text-blue-600">jaysingh2883@gmail.com</a>
+    </p>
+    <div class="mt-4 space-x-4">
+      <a href="https://linkedin.com/in/your-link" target="_blank" class="text-blue-600">LinkedIn</a>
+      <a href="https://github.com/your-link" target="_blank" class="text-blue-600">GitHub</a>
+      <a href="Japjot_Singh_Resume.pdf" class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- Summary -->
+  <section id="summary" class="max-w-5xl mx-auto p-6">
+    <h3 class="text-2xl font-semibold mb-3">Summary</h3>
+    <p>
+      Senior Data Engineer with 6+ years of experience designing and scaling ETL/ELT pipelines, 
+      real-time streaming systems, and cloud-native architectures. Proven record of reducing pipeline 
+      failures by 40%, cutting infrastructure setup time by 80%, and delivering 25% cost savings. 
+      Skilled in Python, SQL, Spark, Kafka, Airflow, DBT, Terraform, and Snowflake, with expertise 
+      across AWS, Azure, and GCP. Experienced in supporting AI/ML workloads, including LLM pipelines 
+      and retrieval-augmented generation (RAG) use cases, to enable advanced analytics and intelligent applications.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-5xl mx-auto p-6 bg-white shadow rounded-lg mt-6">
+    <h3 class="text-2xl font-semibold mb-3">Core Skills</h3>
+    <ul class="grid grid-cols-2 gap-2 text-gray-700">
+      <li><b>Programming:</b> Python, SQL, Scala, Java, R, Bash</li>
+      <li><b>Big Data:</b> Apache Spark, Kafka, Hadoop, Flink, Databricks</li>
+      <li><b>Cloud:</b> AWS (Glue, Lambda, S3, EMR, Redshift, Kinesis), Azure (ADF, Synapse, Purview), GCP (BigQuery, Dataflow)</li>
+      <li><b>Data Engineering:</b> ETL/ELT, CDC, Data Modeling, Warehousing, Governance, Lineage, CI/CD</li>
+      <li><b>Infrastructure:</b> Airflow, DBT, Terraform, GitHub Actions, CloudWatch, Docker, Boto3</li>
+      <li><b>AI/ML Integration:</b> LLM Data Pipelines, RAG Workflows, Feature Engineering</li>
+    </ul>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="max-w-5xl mx-auto p-6">
+    <h3 class="text-2xl font-semibold mb-3">Experience</h3>
+
+    <div class="mb-6">
+      <h4 class="text-xl font-bold">Computational Group — Senior Data Engineer</h4>
+      <p class="text-gray-600 italic">New York | Sept 2023 – Present</p>
+      <ul class="list-disc ml-6 mt-2">
+        <li>Built scalable ETL pipelines using Python, SQL, Spark, reducing pipeline failures by 40%.</li>
+        <li>Automated AWS Glue, Step Functions, and Lambda workflows, achieving 99% reliable orchestration.</li>
+        <li>Developed CDC pipelines with AWS DMS to sync RDS/DynamoDB into Snowflake in real time.</li>
+        <li>Optimized Snowflake performance with clustering and pruning, reducing dashboard latency by 35%.</li>
+        <li>Integrated unstructured data pipelines to support AI/LLM workloads and RAG use cases.</li>
+      </ul>
+    </div>
+
+    <div class="mb-6">
+      <h4 class="text-xl font-bold">ZS Associates — Data Engineer</h4>
+      <p class="text-gray-600 italic">New Jersey | Jan 2022 – Aug 2023</p>
+      <ul class="list-disc ml-6 mt-2">
+        <li>Built ADF + Synapse pipelines for terabyte-scale data, reducing latency by 30%.</li>
+        <li>Implemented DBT testing and anomaly detection with Purview lineage.</li>
+        <li>Integrated SQL Server + REST APIs into Synapse, improving batch throughput by 40%.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-xl font-bold">Bain & Company — Data Engineer</h4>
+      <p class="text-gray-600 italic">New York | Mar 2020 – Dec 2021</p>
+      <ul class="list-disc ml-6 mt-2">
+        <li>Developed Spark anomaly detection pipelines with Glue + Snowflake, improving accuracy by 35%.</li>
+        <li>Built CDC workflows in Databricks and optimized Snowflake star schema models for analytics.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-5xl mx-auto p-6 bg-white shadow rounded-lg mt-6">
+    <h3 class="text-2xl font-semibold mb-3">Projects</h3>
+    <ul class="list-disc ml-6">
+      <li><b>GenAI Pipeline:</b> Designed an unstructured data pipeline enabling LLM fine-tuning and RAG-based knowledge retrieval on Snowflake + AWS.</li>
+      <li><b>Real-Time Analytics:</b> Built Kafka + Spark Streaming pipeline for sub-minute data ingestion powering BI dashboards in Tableau.</li>
+    </ul>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="max-w-5xl mx-auto p-6">
+    <h3 class="text-2xl font-semibold mb-3">Education</h3>
+    <p><b>New York University</b> — Master of Science, Computer Science (Dec 2024)</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center p-6 mt-10">
+    <p>© 2025 Japjot Singh | Senior Data Engineer</p>
+  </footer>
+</body>
+</html>
